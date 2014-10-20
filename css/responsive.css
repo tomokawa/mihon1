@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*↓↓↓↓↓スマホ縦表示↓↓↓↓↓*/
+@media(max-width:479px){
+	#navi{
+		background-color:#999;
+		width:94%;
+		min-width:320px;
+		margin:auto;
+		padding:0.5em 1% 0.5em 1%;
+		position:fixed;
+		bottom:0;
+		z-index:550;
+	}
+	
+	#navi ul li{
+		background-color:#000;
+		width:31.33%;
+		margin:0 1% 0 1%;
+		box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+		-moz-box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+		-webkit-box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+		-o-box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+		-ms-box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+	}
+}
+
+/*↓↓↓↓↓スマホ横・iPad縦表示↓↓↓↓↓*/
+@media(min-width:480px){
+	#welmoji{
+		font-size:4em;
+	}
+	
+	h1{
+		text-align:left;
+	}
+	
+	#navi ul li a:hover{
+		border-right:solid 0.5em red;
+	}
+	
+	.cycle-pager span{
+		font-size:70px;
+		width:70px;
+		height:70px;
+	}
+	
+	#banner{
+		width:21%;/*101-168px*/
+	}
+	
+	#main{
+		width:92%;
+		padding:2%;
+	}
+	#main.index{
+		width:67%;
+	}
+	
+	#footer{
+		margin-bottom:0;
+	}
+	
+	#box .buhin{
+		width:23%;
+	}
+}
+
+/*↓↓↓↓↓PC表示↓↓↓↓↓*/
+@media(min-width:801px){
+	#navi{
+		position:absolute;
+		right:0;
+		top:0;
+	}
+	
+	#slide{
+		width:58%;
+		padding:1%;
+	}
+	
+	#banner{
+		width:38%;/*320-730px(FHD)*/
+		margin:1%;
+	}
+	
+	#main.index{
+		width:94%;
+		margin:1%;
+	}
+	
+	/*product個別---開始----------------------------------------*/
+	#main .cycle-slideshow{
+		width:55%;
+		float:left;
+	}
+
+	#adv-custom-pager{
+		width:45%;
+		float:right;
+	}
+
+	#kobetu_table{
+		width:44%;
+		float:right;
+	}
+	/*product個別-------終了------------------------------------*/
+}
