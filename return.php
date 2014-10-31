@@ -71,9 +71,7 @@
 	</p>
 	
 	<p>お問い合わせ内容<br />
-		<textarea name="naiyou" id="naiyou" rows="15">
-			<?php echo $naiyou; ?>
-		</textarea>
+		<textarea name="naiyou" id="naiyou" rows="15" cols="50"><?php echo $naiyou; ?></textarea>
 	</p>
 	
 	<p><input type="submit" name="kakunin" value="確認画面へ"></p>
